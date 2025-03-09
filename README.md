@@ -1,6 +1,6 @@
 # Организация тестирования
 
-#### [CI](https://github.com/lyasotailya/ahj_DOM/actions/workflows/web.yml/badge.svg)
+#### [CI](https://github.com/lyasotailya/ahj_test/actions/workflows/web.yml/badge.svg)
 
 ---
 
