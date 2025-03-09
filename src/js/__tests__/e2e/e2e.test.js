@@ -1,4 +1,4 @@
-import puppetteer from 'puppeteer';
+import puppeteer from 'puppeteer';
 import { fork } from 'child_process';
 
 jest.setTimeout(30000); // default puppeteer timeout
@@ -20,12 +20,14 @@ describe('Форма валидатора кредитной карты', () => 
       });
     });
 
-    browser = await puppetteer.launch({
+    browser = await puppeteer.launch({
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
       // headless: false, // show gui
       // slowMo: 250,
       // devtools: true, // show devTools
     });
     page = await browser.newPage();
+    await page.goto('http://localhost:9000');
   });
 
   afterAll(async () => {
