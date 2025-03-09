@@ -29,8 +29,12 @@ describe('Форма валидатора кредитной карты', () => 
   });
 
   afterAll(async () => {
-    await browser.close();
-    server.kill();
+    if (browser) {
+      await browser.close();
+    }
+    if (server) {
+      server.kill();
+    }
   });
 
   test('должен проверить валидный номер кредитной карты с помощью Enter ', async () => {
