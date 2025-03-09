@@ -7,7 +7,7 @@ describe('Форма валидатора кредитной карты', () => 
   let browser = null;
   let page = null;
   let server = null;
-  const baseUrl = 'http://localhost:8888';
+  const baseUrl = 'http://localhost:9000';
 
   beforeAll(async () => {
     server = fork(`${__dirname}/e2e.server.js`);
