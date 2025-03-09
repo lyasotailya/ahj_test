@@ -1,5 +1,5 @@
 {
-  "name": "events-testing",
+  "name": "test",
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
@@ -20,10 +20,7 @@
     "coverage": "jest --testPathPattern=./src/ --coverage",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lyasotailya/ahj_test"
-  },
+  "repository": "git+https://github.com/lyasotailya/ahj_test",
   "author": "lyasotailya",
   "license": "ISC",
   "homepage": "https://github.com/lyasotailya/ahj_test/",
